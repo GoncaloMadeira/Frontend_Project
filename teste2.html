@@ -1,0 +1,144 @@
+<script>
+const url = 'https://638e58dcaefc455fb2bb50a8.mockapi.io/Cars';
+
+fetch(url)
+  .then((response) => response.json())
+  .then((data) => {
+    const carros = data;
+    carros.forEach((carro) => {
+      // criar a div principal
+      const divViatura = document.createElement('div');
+      divViatura.classList.add('viatura');
+
+      // criar a marca
+      const marca = document.createElement('p');
+      marca.innerText = carro.marca;
+      marca.classList.add('marca');
+      divViatura.appendChild(marca);
+
+      // criar a imagem da marca
+      const imagemMarca = document.createElement('img');
+      imagemMarca.src = carro.imagemmarca;
+      imagemMarca.classList.add('imagem-marca');
+      divViatura.appendChild(imagemMarca);
+
+      // criar o modelo
+      const modelo = document.createElement('p');
+      modelo.innerText = carro.modelo;
+      modelo.classList.add('modelo');
+      divViatura.appendChild(modelo);
+
+      // criar o preço
+      const preco = document.createElement('p');
+      preco.innerText = carro.preco;
+      preco.classList.add('preco');
+      divViatura.appendChild(preco);
+
+      // criar o tipo de carro
+      const tipoCarro = document.createElement('p');
+      tipoCarro.innerText = carro.tipodechassi;
+      tipoCarro.classList.add('tipo-carro');
+      divViatura.appendChild(tipoCarro);
+
+      // criar o estado
+      const estado = document.createElement('p');
+      estado.innerText = carro.estado;
+      estado.classList.add('estado');
+      divViatura.appendChild(estado);
+
+      // criar o ano
+      const ano = document.createElement('p');
+      ano.innerText = carro.anofabrico;
+      ano.classList.add('ano');
+      divViatura.appendChild(ano);
+
+      // criar o número km
+      const numeroKm = document.createElement('p');
+      numeroKm.innerText = carro.numerokm;
+      numeroKm.classList.add('numero-km');
+      divViatura.appendChild(numeroKm);
+
+      // criar a potência
+      const potencia = document.createElement('p');
+      potencia.innerText = carro.potencia;
+      potencia.classList.add('potencia');
+      divViatura.appendChild(potencia);
+
+      // criar a capacidade
+      const capacidade = document.createElement('p');
+      capacidade.innerText = carro.capacidade;
+      capacidade.classList.add('capacidade');
+      divViatura.appendChild(capacidade);
+
+      // criar o combustível
+      const combustivel = document.createElement('p');
+      combustivel.innerText = carro.combustivel;
+      combustivel.classList.add('combustivel');
+      divViatura.appendChild(combustivel);
+
+      // criar a cor exterior
+      const corExterior = document.createElement('p');
+      corExterior.innerText = carro.corexterior;
+      corExterior.classList.add('cor-exterior');
+      divViatura.appendChild(corExterior);
+
+      // criar a transmissão
+      const transmissao = document.createElement('p');
+      transmissao.innerText = carro.transmissao;
+      transmissao.classList.add('transmissao');
+      divViatura.appendChild(transmissao);
+
+      // criar o número de portas
+      const numPortas = document.createElement('p');
+      numPortas.innerText = carro.portas;
+      numPortas.classList.add('num-portas');
+      divViatura.appendChild(numPortas);
+
+      // criar as imagens
+      const imagens = document.createElement('div');
+      imagens.classList.add('imagens');
+      carro.imagens.forEach((imagem) => {
+        const img = document.createElement('img');
+        img.src = imagem;
+        imagens.appendChild(img);
+      });
+      divViatura.appendChild(imagens);
+
+      // criar os sensores
+      const sensores = document.createElement('p');
+      sensores.innerText = carro.sensores;
+      sensores.classList.add('sensores');
+      divViatura.appendChild(sensores);
+
+      // criar a segurança
+      const seguranca = document.createElement('div');
+      seguranca.classList.add('seguranca');
+      carro.seguranca.forEach((elementoSeguranca) => {
+        const elSeguranca = document.createElement('p');
+        elSeguranca.innerText = elementoSeguranca;
+        seguranca.appendChild(elSeguranca);
+      });
+      divViatura.appendChild(seguranca);
+
+      // criar o tipo de farois
+      const tipoFarois = document.createElement('p');
+      tipoFarois.innerText = carro.tipofarois;
+      tipoFarois.classList.add('tipo-farois');
+      divViatura.appendChild(tipoFarois);
+
+      // criar o número de chassi
+      const numeroChassi = document.createElement('p');
+      numeroChassi.innerText = carro.numerodechassi;
+      numeroChassi.classList.add('numero-chassi');
+      divViatura.appendChild(numeroChassi);
+
+      // criar a transmissão
+      const tranmissao = document.createElement('p');
+      tranmissao.innerText = carro.tranmissao;
+      tranmissao.classList.add('transmissao');
+      divViatura.appendChild(tranmissao);
+
+      document.body.appendChild(divViatura);
+    });
+  });
+</script>

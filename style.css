@@ -1,0 +1,140 @@
+section{
+    background-image: url("banner.jpg");
+    background-position: 5%;
+    background-size: 1920px;
+    color: white;
+}
+
+.roda{
+    background-image: url("banner.jpg");
+    background-position: 5%;
+    background-size: 1920px;
+    color: white;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+}
+
+.link:hover{
+    text-decoration: none;
+    color: black;
+}
+
+.carro{
+    width: 100%;
+}
+
+.ban{
+    width: 100%;
+    height: 20%;
+}
+
+.logo{
+    width: 30%;
+    height: auto;
+}
+
+.none{
+    text-decoration: none;
+    color: white;
+}
+
+.none:hover{
+    text-decoration: none;
+    color: white;
+}
+
+.container a{
+    text-decoration: none;
+}
+
+.botao{
+    color: white;
+    background: #3e43d9;
+    padding: 10px 20px;
+    border-radius: 6px;
+    border-style: none;
+    font-size: 20px;
+}
+
+.gray{
+    background: #3b3b3b ;
+}
+
+.botao:hover{
+    background: #565be4;
+    transition-duration: 0.5s;
+}
+
+.main-box{
+    border: 0.5px solid rgb(220, 220, 220);
+    border-radius: 5px;
+    height: 100%;
+}
+
+.main-box h2 {
+    padding: 20px 20px 0 20px;
+}
+
+.main-box p {
+    padding: 20px;
+}
+
+
+.second-box{
+    background: rgb(245, 245, 245);
+    border-top: 0.1px solid rgb(220, 220, 220);
+    padding: 20px;
+}
+
+.preco{
+    background-color: #3e43d9;
+    color: white;
+    border-radius: 10px;
+    padding:20px;
+
+}
+
+.full{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 0.5px solid rgb(214, 214, 214);
+}
+
+.icon{
+    width: 40%;
+}
+
+footer{
+    background:#3b3b3b;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover{
+    color: rgb(218, 218, 218);
+}
+
+label{
+    font-size: 20px;
+    padding-bottom: 1%;
+}
+
+.bottom{
+    margin-bottom: 20px;
+}
+
+.size{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}

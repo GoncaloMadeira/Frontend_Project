@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stand Carrocinha</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets-bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets-bootstrap/animate.css">
+    <script src="https://kit.fontawesome.com/c2e3f09fdc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark gray fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="logo.png"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse flex-row-reverse ">
+            <ul class="navbar-nav gap-2">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="todos_os_veiculos.html">Viaturas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="servicos.html">Serviços</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="comparar_veiculos.html">Comparar Veículos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="sobre_nos.html">Sobre Nós</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contactos.html">Contactos</a>
+                </li>
+                </ul>
+          </div>
+        </div>
+      </nav>
+    <section>
+
+    <div class="container py-5 mt-5">          
+            <div class="row py-5">
+                <div class="col-lg-12">
+                    <h1 class="display-4"><strong>Serviços</strong></h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container py-5 text-center justify-content-around animated bounceInDown">          
+        <div class="row">
+            <div class="col-lg-3">
+                <img src="/icons/mecanica.png" class="icon pb-3">
+                <h3>Mecânica Geral</h3>
+            </div>
+            <div class="col-lg-3">
+                <img src="/icons/revisoes.png" class="icon pb-3">
+                <h3>Revisões</h3>
+            </div>
+            <div class="col-lg-3">
+                <img src="/icons/diagnostico.png" class="icon pb-3">
+                <h3>Diagnóstico</h3>
+            </div>
+            <div class="col-lg-3">
+                <img src="/icons/detalhe.png" class="icon pb-3">
+                <h3>Detalhe Automóvel</h3>
+            </div>
+        </div>
+    </div>
+    <article>
+        <div class="container">          
+            <div class="row pb-5">
+                <div class="col-lg-12 bg-light p-3 mb-3">
+                    <h2>Contactar Oficina</h2>
+                    <p class="lead">Para obter um orçamento ou algum exclarecimento de dúvidas preencha os campos abaixo:</p>
+                </div>
+            <form>
+                
+                <div class="col-lg-12 bottom">
+                    <label for="select">Tipo de Serviço:</label><br>
+                    <select id="select" class="full">
+                        <option>Mecâncica Geral</option>
+                        <option>Revisões</option>
+                        <option>Diagnóstico</option>
+                        <option>Detalhe Automóvel</option>
+                    </select>
+                </div>
+                <div class="col-lg-12 bottom">
+                    <label for="fname">Email:</label><br>
+                    <input type="text" id="mail" name="mail" class="full" placeholder="name@example.com"><br>
+                </div>
+                <div class="col-lg-12 bottom">
+                    <label for="select">Mensagem:</label><br>
+                    <textarea class="full"></textarea>
+                </div>
+                <input class="btn btn-primary btn-lg px-5 py-3" type="submit" value="Enviar">
+            </form>
+            </div> 
+        </div>       
+    </article>
+    <footer>
+        <h4>Stand Carrocinha © 2022</h4><br>
+        <h5>Desenvolvido por : <a href="https://www.linkedin.com/in/gon%C3%A7alo-madeira-498ba9161/" target="_blank">Gonçalo Madeira</a></h5>
+    </footer>
+</body>
+</html>
