@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stand Carrocinha</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets-bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets-bootstrap/animate.css">
+    <script src="https://kit.fontawesome.com/c2e3f09fdc.js" crossorigin="anonymous"></script>
+  <script   src="https://code.jquery.com/jquery-3.6.3.slim.min.js"   integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo="   crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+
+    <!--
+        API
+        https://638e58dcaefc455fb2bb50a8.mockapi.io/Cars
+
+        COLOR
+        #1C73D6
+    -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark gray fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><img src="logo.png"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse flex-row-reverse">
+            <ul class="navbar-nav gap-2">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="todos_os_veiculos.html">Viaturas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="servicos.html">Serviços</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="comparar_veiculos.html">Comparar Veículos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sobre_nos.html">Sobre Nós</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contactos.html">Contactos</a>
+              </li>
+              </ul>
+          </div>
+        </div>
+      </nav>
+    <section>
+
+    <div class="container py-5 mt-5">
+            <div class="row py-5">
+                <div class="col-lg-12">
+                    <h1 class="display-4"><strong>Adicionar Veículo</strong></h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="container">
+      <h1 class="text-center pt-5 pb-4">Insira os dados do Novo Veículo</h1>
+              <form name="form" id="form">
+                <div class="form-row-lg-12 d-flex justify-content-between py-4">
+                  <div class="col-lg-3">
+                    <label for="marca">Marca</label>
+                    <input type="text" class="form-control form-control-lg" placeholder="Marca" id="marca">
+                  </div>
+                  <div class="col-lg-3">
+                    <label for="modelo">Modelo</label>
+                    <input type="text" class="form-control form-control-lg" placeholder="Modelo" id="modelo">
+                  </div>
+                  <div class="col-lg-3">
+                    <label for="anofabrico">Ano</label>
+                    <input type="number" min="1900" max="2023" class="form-control form-control-lg" placeholder="Ano" id="anofabrico"/>
+                  </div>
+                </div>
+
+                <div class="form-row-lg-12 d-flex justify-content-between py-4">
+                  <div class="col-lg-3">
+                    <label for="estado">Estado</label>
+                    <input type="text" class="form-control form-control-lg" placeholder="Estado" id="estado">
+                  </div>
+                  <div class="col-lg-3">
+                    <label for="preco">Preço</label>
+                    <input type="number" class="form-control form-control-lg" placeholder="Preço" id="preco">
+                  </div>
+                  <div class="col-lg-3">
+                    <label for="numerokm">Kilometragem</label>
+                    <input type="number" class="form-control form-control-lg" placeholder="Kilometragem" id="numerokm">
+                  </div>
+                </div>
+
+                <div class="form-row-lg-12 d-flex justify-content-between py-4">
+                  <div class="col-lg-3">
+                    <label for="combustivel">Combustivel</label>
+                    <input type="text" class="form-control form-control-lg" placeholder="Combustivel" id="combustivel">
+                  </div>
+                  <div class="col-lg-3">
+                    <label for="tipodechassi">Tipo de Chassis</label>
+                    <input type="text" class="form-control form-control-lg" placeholder="Tipo de Chassis" id="tipodechassi">
+                  </div>
+                  <div class="col-lg-3">
+                    <label for="potencia">Potência (Cv)</label>
+                    <input type="number" class="form-control form-control-lg" placeholder="Potência" id="potencia">
+                  </div>
+                </div>
+
+                <div class="form-row-lg-12 d-flex justify-content-between py-4">
+                  <div class="col-lg-3">
+                    <label for="capacidade">Capacidade</label>
+                    <input type="text" class="form-control form-control-lg" placeholder="Capacidade" id="capacidade">
+                  </div>
+                  <div class="col-lg-3">
+                    <label for="corexterior">Cor do Veículo</label>
+                    <input type="text" class="form-control form-control-lg" placeholder="Cor do Veículo" id="corexterior">
+                  </div>
+                  <div class="col-lg-3">
+                    <label for="portas">Número de Portas</label>
+                    <input type="number" class="form-control form-control-lg" placeholder="Número de Portas" id="portas">
+                  </div>
+                </div>
+
+                <div class="form-row-lg-12 d-flex justify-content-between py-4">
+                  <div class="col-lg-3">
+                    <label for="transmissao">Transmissão</label>
+                    <input type="text" class="form-control form-control-lg" placeholder="Transmissão" id="transmissao">
+                  </div>
+                  <div class="col-lg-3">
+                    <label for="sensores">Sensores</label>
+                    <input type="text" class="form-control form-control-lg" placeholder="Sensores" id="sensores">
+                  </div>
+                  <div class="col-lg-3">
+                    <label for="tipofarois">Tipo de Faróis</label>
+                    <input type="text" class="form-control form-control-lg" placeholder="Tipo de Faróis" id="tipofarois">
+                  </div>
+                </div>
+
+                <div class="form-row-lg-12 d-flex justify-content-between py-4">
+                  <div class="col-lg-3">
+                    <label for="numerochassi">Número de Chassis</label>
+                    <input type="text" class="form-control form-control-lg" placeholder="Número de Chassis" id="numerochassi">
+                  </div>
+                  <div class="col-lg-3">
+                    <label for="seguranca">Segurança</label>
+                    <input type="text" class="form-control form-control-lg" placeholder="Segurança" id="seguranca">
+                  </div>
+
+                  <button type="button" onclick="addField()">Add Field</button>
+
+<script>
+function addField() {
+  const form = document.querySelector('form');
+  const newDiv = document.createElement('div');
+  newDiv.setAttribute('class', 'form-row-lg-12 d-flex justify-content-between py-4');
+  newDiv.innerHTML = `
+    <div class="col-lg-3">
+      <label for="seguranca">Segurança</label>
+      <input type="text" class="form-control form-control-lg" placeholder="Segurança" id="seguranca${counter}">
+    </div>
+  `;
+  form.appendChild(newDiv);
+}
+
+let counter = 0;
+
+function addField() {
+  counter += 1;
+  // rest of the function goes here
+}
+
+</script>
+
+                  <div class="col-lg-3">
+                    <label for="imagem">imagem</label>
+                    <input type="text" class="form-control form-control-lg" placeholder="imagem" id="imagem">
+                  </div>
+                </div>
+                <div class="form-row-lg-12 py-4 text-center">
+                  <button class="col-lg-2 btn btn-lg btn-primary py-4 text-center mt-2" type="submit">Submeter</button>
+                  <!--<input type="text" id="exx">
+                  <button onclick="appendToList()">Append to List</button>-->
+                  <input type="text" class="form-control" oninput="stringToArray(this.value)" />
+                </div>
+              </form>
+    </div>
+<script>
+ /* const appendToList = () => {
+  let inputString = document.getElementById("exx").value;
+  let outputList = inputString.split(",");
+  console.log(outputList);
+} */
+function stringToArray(str) {
+        const array = str.split(',');
+        console.log(array);
+    }
+</script>
+
+    <footer>
+        <h4>Stand Carrocinha © 2022</h4><br>
+        <h5>Desenvolvido por : <a href="https://www.linkedin.com/in/gon%C3%A7alo-madeira-498ba9161/" target="_blank">Gonçalo Madeira</a></h5>
+    </footer>
+</body>
+</html>

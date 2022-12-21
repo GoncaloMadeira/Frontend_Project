@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stand Carrocinha</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets-bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets-bootstrap/animate.css">
+  <script   src="https://code.jquery.com/jquery-3.6.3.slim.min.js"   integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo="   crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark gray fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="logo.png"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse flex-row-reverse">
+            <ul class="navbar-nav gap-2">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Início</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="todos_os_veiculos.html">Viaturas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="servicos.html">Serviços</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="comparar_veiculos.html">Comparar Veículos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="sobre_nos.html">Sobre Nós</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contactos.html">Contactos</a>
+                </li>
+                </ul>
+          </div>
+        </div>
+      </nav>
+    <section>
+
+    <div class="container py-5 mt-5">
+            <div class="row py-5">
+                <div class="col-lg-12">
+                    <h1 class="display-4"><strong>Comparar Veículos</strong></h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container pt-5">
+        <div class="row">
+            <div class="col-lg-12 text-center pb-5">
+                <h2><strong>Selecione os Veículos que pretende Comparar</strong></h2>
+            </div>
+            <form method="get" action="comparar_veiculos.html" id="form">
+            <div class="col-lg-12 d-flex justify-content-around">
+                <div class="carro1 text-center">
+                <label for="form-select">Primeiro Veículo:</label><br>
+                    <select id="select1" class="full bg-white shadow-sm px-5 py-3 mb-5 bg-white rounded border-0" name="id">
+
+                    </select>
+                </div>
+                <div class="carro2 text-center">
+                <label for="form-select">Segundo Veículo:</label><br>
+                    <select id="select2" class="full bg-white shadow-sm px-5 py-3 mb-5 bg-white rounded border-0" name="id2">
+                      <option id='0'>escolha a viatura</option>
+                    </select>
+                </div>
+            </div>
+            </form>
+        </div>
+        <div class="col-lg-12 text-center pb-5">
+          <button class="botao" id="submit-button">Comparar</button>
+        </div>
+    </div>
+    <div class="container pb-5">
+        <div class="row">
+            <div class="col-lg-12 pt-2 pb-5">
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col"><h3><strong>Caracteristicas</strong></h3></th>
+                        <th scope="col" class="text-center"><h3>Veículo 1</h3></th>
+                        <th scope="col" class="text-center"><h3>Veículo 2</h3></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Marca
+                        </th>
+                        <td class="text-center" id="marca1"></td>
+                        <td class="text-center" id="marca2"></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Número Chassis</th>
+                        <td class="text-center" id="numerochassi1"></td>
+                        <td class="text-center" id="numerochassi2"></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Modelo</th>
+                        <td class="text-center" id="modelo1"></td>
+                        <td class="text-center" id="modelo2"></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Preço</th>
+                        <td class="text-center" id="preco1"></td>
+                        <td class="text-center" id="preco2"></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Tipo de Chassis</th>
+                        <td class="text-center" id="tipodechassi1"></td>
+                        <td class="text-center" id="tipodechassi2"></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Estado</th>
+                        <td class="text-center" id="estado1"></td>
+                        <td class="text-center" id="estado2"></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Ano de Fabrico</th>
+                        <td class="text-center" id="anofabrico1"></td>
+                        <td class="text-center" id="anofabrico2"></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Kilometragem</th>
+                        <td class="text-center" id="numerokm1"></td>
+                        <td class="text-center" id="numerokm2"></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Potência(Cv)</th>
+                        <td class="text-center" id="potencia1"></td>
+                        <td class="text-center" id="potencia2"></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Capacidade</th>
+                        <td class="text-center" id="capacidade1"></td>
+                        <td class="text-center" id="capacidade2"></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Combustível</th>
+                        <td class="text-center" id="combustivel1"></td>
+                        <td class="text-center" id="combustivel2"></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Cor</th>
+                        <td class="text-center" id="corexterior1"></td>
+                        <td class="text-center" id="corexterior2"></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Transmissão</th>
+                        <td class="text-center" id="transmissao1"></td>
+                        <td class="text-center" id="transmissao2"></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Número de Portas</th>
+                        <td class="text-center" id="portas1"></td>
+                        <td class="text-center" id="portas2"></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Sensores</th>
+                        <td class="text-center" id="sensores1"></td>
+                        <td class="text-center" id="sensores2"></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Tipo de Faróis</th>
+                        <td class="text-center" id="tipofarois1"></td>
+                        <td class="text-center" id="tipofarois2"></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Segurança</th>
+                        <td class="text-center itensseguranca1"><p id="seguranca1"></p></td>
+                        <td class="text-center itensseguranca2"><p id="seguranca2"></p></td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <h4>Stand Carrocinha © 2022</h4><br>
+        <h5>Desenvolvido por : <a href="https://www.linkedin.com/in/gon%C3%A7alo-madeira-498ba9161/" target="_blank">Gonçalo Madeira</a></h5>
+    </footer>
+      <script src="comparar_veiculos.js"></script>
+</body>
+</html>
